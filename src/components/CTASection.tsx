@@ -1,8 +1,9 @@
 import { Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import AnimatedSection from "./AnimatedSection";
 
 const CTASection = () => (
-  <section id="cta" className="py-20 md:py-28 bg-gradient-navy text-primary-foreground">
+  <section className="py-20 md:py-28 bg-gradient-navy text-primary-foreground">
     <div className="container mx-auto px-4 md:px-8 max-w-2xl text-center">
       <AnimatedSection>
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -14,14 +15,14 @@ const CTASection = () => (
         <p className="text-gold-light text-sm font-semibold mb-8">
           Don't let another quarter pass without a growth plan.
         </p>
-        <a
-          href="#"
+        <Link
+          to="/contact"
           className="inline-flex items-center gap-2 bg-gradient-gold text-accent-foreground font-bold px-8 py-4 rounded-xl text-lg shadow-gold hover:opacity-90 transition-all"
         >
           <Calendar size={20} />
           Book Your Strategy Call Now
           <ArrowRight size={20} />
-        </a>
+        </Link>
       </AnimatedSection>
     </div>
   </section>

@@ -1,13 +1,22 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const quickLinks = [
+  { label: "About", to: "/about" },
+  { label: "Services", to: "/services" },
+  { label: "Testimonials", to: "/testimonials" },
+  { label: "Blog", to: "/blog" },
+  { label: "Contact", to: "/contact" },
+];
 
 const FooterSection = () => (
   <footer className="py-12 bg-navy-dark text-primary-foreground/70">
     <div className="container mx-auto px-4 md:px-8">
       <div className="grid md:grid-cols-3 gap-8 mb-8">
         <div>
-          <p className="font-display text-xl font-bold text-primary-foreground mb-3">
+          <Link to="/" className="font-display text-xl font-bold text-primary-foreground mb-3 block">
             Jewel<span className="text-gold">Consult</span>
-          </p>
+          </Link>
           <p className="text-sm leading-relaxed">
             Premium consulting for jewellery businesses ready to scale.
           </p>
@@ -15,8 +24,10 @@ const FooterSection = () => (
         <div>
           <p className="font-semibold text-primary-foreground text-sm mb-3">Quick Links</p>
           <div className="space-y-2">
-            {["About", "Services", "Results", "Testimonials"].map((l) => (
-              <a key={l} href={`#${l.toLowerCase()}`} className="block text-sm hover:text-gold transition-colors">{l}</a>
+            {quickLinks.map((l) => (
+              <Link key={l.to} to={l.to} className="block text-sm hover:text-gold transition-colors">
+                {l.label}
+              </Link>
             ))}
           </div>
         </div>

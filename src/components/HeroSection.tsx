@@ -1,4 +1,5 @@
 import { ArrowRight, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 import consultantImg from "@/assets/consultant-hero.jpg";
 import AnimatedSection from "./AnimatedSection";
 
@@ -19,20 +20,20 @@ const HeroSection = () => (
               Struggling with stagnant sales, untrained staff, or no clear growth strategy? We fix that.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#cta"
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-gold text-accent-foreground font-bold px-7 py-4 rounded-lg text-base shadow-gold hover:opacity-90 transition-all"
               >
                 <Calendar size={18} />
                 Book Free Strategy Call
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                to="/services"
                 className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary font-semibold px-7 py-4 rounded-lg text-base hover:bg-primary hover:text-primary-foreground transition-all"
               >
                 Explore Consulting Plans
                 <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
             <p className="text-sm font-medium text-gold-dark flex items-center gap-1.5">
               <span className="inline-block w-2 h-2 rounded-full bg-gold animate-pulse" />

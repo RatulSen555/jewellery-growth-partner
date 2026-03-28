@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,13 +7,13 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 213 54% 24%;
+    --foreground: 207 33% 23%;
 
     --card: 0 0% 100%;
-    --card-foreground: 213 54% 24%;
+    --card-foreground: 207 33% 23%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 213 54% 24%;
+    --popover-foreground: 207 33% 23%;
 
     --primary: 213 54% 24%;
     --primary-foreground: 0 0% 100%;
@@ -21,8 +21,8 @@
     --secondary: 43 65% 52%;
     --secondary-foreground: 213 54% 24%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 213 20% 45%;
+    --muted: 210 17% 97%;
+    --muted-foreground: 213 15% 48%;
 
     --accent: 43 65% 52%;
     --accent-foreground: 0 0% 100%;
@@ -30,11 +30,11 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 213 20% 88%;
-    --input: 213 20% 88%;
+    --border: 213 20% 90%;
+    --input: 213 20% 90%;
     --ring: 43 65% 52%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --gold: 43 65% 52%;
     --gold-light: 43 55% 70%;
@@ -43,13 +43,14 @@
     --navy-light: 213 40% 35%;
     --navy-dark: 213 60% 15%;
     --cream: 40 30% 97%;
+    --light-grey: 210 17% 98%;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'DM Sans', sans-serif;
+    --font-display: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
 
-    --shadow-card: 0 4px 24px -4px hsl(213 54% 24% / 0.08);
-    --shadow-card-hover: 0 12px 40px -8px hsl(213 54% 24% / 0.15);
-    --shadow-gold: 0 4px 20px -4px hsl(43 65% 52% / 0.4);
+    --shadow-card: 0 4px 24px -4px hsl(213 54% 24% / 0.06);
+    --shadow-card-hover: 0 16px 48px -12px hsl(213 54% 24% / 0.12);
+    --shadow-gold: 0 4px 20px -4px hsl(43 65% 52% / 0.35);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
